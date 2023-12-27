@@ -32,10 +32,6 @@ from mypy.types import MYPYC_NATIVE_INT_NAMES, Instance, ProperType
 # as some functions only accept bytes objects. Here convenience
 # trumps safety.
 TYPE_PROMOTIONS: Final = {
-    "builtins.int": "float",
-    "builtins.float": "complex",
-    "builtins.bytearray": "bytes",
-    "builtins.memoryview": "bytes",
 }
 
 
